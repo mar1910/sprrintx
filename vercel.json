@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/pagar.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/pagar", "methods": ["POST"], "dest": "/api/pagar.js" }
+    ]
+  }
+    

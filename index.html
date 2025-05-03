@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define el conjunto de caracteres para el documento -->
+    <meta charset="UTF-8">
+    <!-- Indica al navegador que debe usar el modo de compatibilidad más reciente -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Define la vista inicial para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Inicio | SprintX</title>
+    <!-- Conecta con los servidores de Google Fonts para preconexión -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlaza las fuentes Lato y Roboto desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Enlaza el archivo CSS para normalizar estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Enlaza el archivo CSS principal para los estilos generales -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlaza el archivo CSS adicional para estilos específicos -->
+    <link rel="stylesheet" href="css/prox.css">
+    <!-- Enlaza el archivo CSS para el menú de navegación -->
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- Cabecera del sitio que contiene el menú de navegación -->
+    <header class="menu-header">
+        <nav class="menu-nav">
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-cart"></i> Carrito 
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <!-- Cabecera principal del sitio -->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <!-- Contenedor para la imagen del encabezado -->
+            <div class="imagen-header">
+                <picture>
+                    <!-- Fuentes de imagen para diferentes formatos -->
+                    <source
+                        sizes="1920w"
+                        srcset="img/n111 (2)s.png"
+                        type="image/png">
+                    <!-- Imagen de respaldo para otros navegadores -->
+                    <img loading="lazy" decoding="async" src="img/index.png" alt="EarWaves" width="700" height="400">
+                </picture>
+            </div>
+          <!-- Contenedor para el texto del encabezado -->
+<div class="texto-header">
+    <!-- Lema principal -->
+    <p class="tagline-principal"></p>
+    <!-- Título principal con estilo degradado -->
+    <h1 class="degradado-verde tituloPrincipal">SprintX</h1>
+    <!-- Descripción del producto -->
+    <p>Potencia tu entrenamiento con los <strong>Nike Free Metcon 6</strong>. Diseñadas para ofrecer la máxima estabilidad y flexibilidad, estas zapatillas combinan una estructura ligera con una suela adaptable que permite movimientos naturales. Su ajuste seguro y transpirable brinda comodidad en cada repetición, mientras que su diseño innovador garantiza el mejor desempeño en el gimnasio o en cualquier entrenamiento de alto impacto.</p>
+    <!-- Precio del producto -->
+    <p>Desde <span class="precio-principal">Q1,240.00</span></p>
+</div>
+
+        </div>
+    </header>
+
+   <!-- Sección de iconos destacados -->
+<section class="contenedor">
+    <div class="iconos">
+        <!-- Icono 1: Innovación en Diseño -->
+        <div class="icono">
+            <img src="img/innovacin.png" alt="Imagen Icono">
+            <h3>Innovación en Diseño</h3>
+            <p>En SprintX, combinamos las últimas tendencias con tecnología avanzada para ofrecer calzado moderno y funcional. Cada par está diseñado para brindar comodidad, estilo y un ajuste perfecto en cada paso.</p>
+        </div>
+
+        <!-- Icono 2: Máximo Confort -->
+        <div class="icono">
+            <img src="img/comodidad.png" alt="Imagen Icono">
+            <h3>Máximo Confort</h3>
+            <p>Nos enfocamos en ofrecer zapatos ergonómicos y cómodos para todo tipo de actividades. Con materiales de alta calidad y un diseño pensado para el bienestar de tus pies, SprintX garantiza una experiencia inigualable.</p>
+        </div>
+
+        <!-- Icono 3: Rendimiento y Durabilidad -->
+        <div class="icono">
+            <img src="img/durabilidad.png" alt="Imagen Icono">
+            <h3>Durabilidad</h3>
+            <p>Nuestros zapatos están hechos para durar. Gracias a materiales resistentes y un proceso de fabricación de alta calidad, SprintX ofrece calzado que te acompaña en cada aventura sin perder su estilo y rendimiento.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección sobre la empresa -->
+<!-- Sección sobre la empresa -->
+<!-- Sección sobre la empresa -->
+<section class="sobre-la-empresa">
+    <div class="overlay"></div> <!-- Capa de superposición para mejorar la legibilidad -->
+    <div class="contenedor sobre-la-empresa-grid">
+        <div class="text-sobre-la-empresa">
+            <h2>Estilo y Comodidad con <span>SprintX</span></h2>
+            <p>En SprintX, nos especializamos en ofrecer calzado de alta calidad para quienes buscan comodidad, diseño y durabilidad. Contamos con una amplia selección de zapatos deportivos, casuales y de alto rendimiento para todas las edades.</p>
+            <p>Descubre por qué SprintX es la mejor opción para quienes buscan lo mejor en calzado, combinando innovación y las últimas tendencias del mercado.</p>
+            <a href="nosotros.html" class="btn-mas-info">Conoce Más</a>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Sección de modelos -->
+<main class="contenedor modelos">
+    <h2 class="text-center degradado-verde header-modelos">Elige tus zapatos</h2>
+    <div class="listado-modelos">
+        <div class="modelo modelo-x" onclick="window.location.href='prox.html'">
+            <h3>Nike Free Metcon 6</h3>
+            <p class="precio">Q1,240.00</p>
+        </div>
+        <div class="modelo modelo-y" onclick="window.location.href='proy.html'">
+            <h3>Nike G.T. Cut 3</h3>
+            <p class="precio">Q1,955.00</p>
+        </div>
+        <div class="modelo modelo-z" onclick="window.location.href='proz.html'">
+            <h3>LeBron XXII SN</h3>
+            <p class="precio">Q1,780.00</p>
+        </div>
+    </div>
+    
+    <!-- Botón para ver todos los modelos -->
+    <div class="contenedor-boton">
+        <a href="modelos.html" class="btn-ver-mas">Ver Todos los Modelos</a>
+    </div>
+</main>
+
+
+
+
+   <!-- Sección de noticias y suscripción -->
+   <section class="noticias">
+    <div class="overlay"></div> <!-- Capa de superposición para mejorar la legibilidad -->
+    <div class="contenido-noticias contenedor">
+        <div class="noticias-texto">
+            <h2>¡Suscríbete y No Te Pierdas Nada!</h2>
+            <p>Recibe ofertas exclusivas, novedades en calzado y los últimos lanzamientos de SprintX antes que nadie.</p>
+        </div>
+        <div class="noticias-formulario">
+            <form class="formulario">
+                <input type="email" placeholder="Ingresa tu correo electrónico..." required>
+                <button type="submit" class="btn-suscribirse">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlaza el archivo JavaScript para funcionalidades adicionales -->
+    <script src="js/script.js"></script> 
+</body>
+</html>

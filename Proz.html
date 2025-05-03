@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintX</title>
+
+    <!-- Importar Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Importar Font Awesome para el ícono del carrito -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Importar CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/prox.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/producto.css"> <!-- Nuevo CSS para la galería -->
+
+</head>
+<body>
+
+    
+    <header class="menu-header">
+        <nav class="menu-nav">
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-cart"></i> Carrito 
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-compra">
+        <div class="contenedor">
+            <div class="detalle-producto">
+
+                <!-- Galería de imágenes -->
+                <div class="galeria">
+                    <div class="imagen-principal">
+                        <a href="modelos.html" class="flecha-modelos" title="Volver a Modelos">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <img id="img-grande" src="img/n3.png" alt="InnerWaves Z">
+                    </div>
+                    
+                    <div class="miniaturas">
+                        <img src="img/n3-1.png" alt="Vista 1" class="miniatura" onclick="cambiarImagen('img/n3-1.png')">
+                        <img src="img/n3-2.png" alt="Vista 2" class="miniatura" onclick="cambiarImagen('n3-2.png')">
+                        <img src="img/n3-3.png" alt="Vista 3" class="miniatura" onclick="cambiarImagen('n3-3.png')">
+                        <img src="img/n3-4.png" alt="Vista 4" class="miniatura" onclick="cambiarImagen('img/n4-4.png')">
+                    </div>
+                </div>
+
+                <div class="info-producto">
+                    <h3>LeBron XXII SN</h3>
+                    <p class="descripcion">
+                        Domina la cancha con las <strong>LeBron XXII SN</strong>, diseñadas para brindar potencia, velocidad y estabilidad en cada jugada. 
+                         Con una amortiguación avanzada y una suela optimizada para cambios de dirección rápidos, estas zapatillas ofrecen el equilibrio perfecto entre comodidad y rendimiento. 
+                          Su diseño innovador y materiales de alta calidad aseguran durabilidad y estilo dentro y fuera del juego.
+                    </p>
+                    <p class="precio">Q1,780.00</p>
+                    <label for="talla-nike3">Selecciona tu talla:</label>
+                    <select id="talla-nike3" class="selector-talla">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                    </select>
+        
+                    <a href="#" class="btn-comprar agregar-carrito"
+                       data-id="3"
+                       data-nombre="LeBron XXII SN"
+                       data-precio="1780"
+                       data-imagen="img/n3.png"
+                       data-talla-selector="talla-nike3">
+                       <i class="fa fa-shopping-cart"></i> Agregar al Carrito
+                    </a>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="noticias" id="imagen2">
+        <div class="contenido-noticias contenedor">
+            <div class="text-noticias">
+                <h2>Recibe Actualizaciones</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero, placeat perspiciatis nostrum.</p>
+                <form class="formulario">
+                    <div class="input">
+                        <input type="text" placeholder="Tu Email">
+                    </div>
+                    <input type="submit" value="Suscribirme">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/agregar-carrito.js"></script>
+    <script src="js/producto.js"></script> <!-- Nuevo script para la galería -->
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | SprintX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<!-- API de Google Places -->
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
+<script src="js/autocompletar-direccion.js"></script>
+
+<body>
+
+    <header class="menu-header">
+        <nav class="menu-nav">
+            <ul class="menu-lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="modelos.html">Modelos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-cart"></i> Carrito 
+                        <span id="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <!-- Carrito -->
+        <section class="contenedor-carrito">
+            <h2>Productos en el Carrito</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Talla</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>   
+                    </tr>
+                </thead>
+                <tbody id="lista-carrito"></tbody>
+            </table>
+            <p class="total-texto">Total General: Q<span id="total">0</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </section>
+
+        <!-- Dirección de Envío -->
+        <!-- Formulario de Dirección con Autocompletar -->
+<!-- Formulario de Dirección con Autocompletado -->
+<section class="contenedor-direccion">
+    <h2>Dirección de Envío</h2>
+    <form id="form-direccion">
+        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+        <input type="text" id="direccion" placeholder="Escribe tu dirección" required>
+        <input type="text" id="ciudad" placeholder="Ciudad" required>
+        <input type="text" id="codigo-postal" placeholder="Código Postal" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+    </form>
+</section>
+
+
+
+        <!-- Pago con Tarjeta -->
+        <section class="contenedor-pago">
+            <h2>Pago con Tarjeta</h2>
+            <form id="form-pago">
+                <div id="card-element"></div>
+                <button id="submit-pago">Pagar Ahora</button>
+            </form>
+            <div id="mensaje-pago"></div>
+        </section>
+
+    </main>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/stripe.js"></script>
+    <script src="js/agregar-carrito.js" defer></script>
+
+</body>
+</html>
